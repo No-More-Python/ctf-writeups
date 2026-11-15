@@ -21,9 +21,9 @@ Start with **PE-Bear**. This binary is 64bit.
 Take a look at the sections. Notice there is a weird section called **ATOM**.  
 
 ![import1](Images/Import1.png)  
-And the imports only have 2 DLLs.  
+And the imports only have 2 DLLs.   
 
-Let's see if **DIE** provided something useful
+Let's see if **DIE** provided something useful.  
 ![alt text](Images/image-2.png)  
 The most important thing about the result is the binary was packed with a packer called **AtomPePacker**.
 
