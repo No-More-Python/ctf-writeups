@@ -321,6 +321,8 @@ for i in range(num_sections):
             print(f"[+] Mapped [{section_name}] (VA: {hex(full_va)}) <- {dump['filename']} (+{hex(offset_in_bin)}) to RawPtr {hex(raw_ptr)}")
             mapped = True
             break
+    if mapped == False:
+        print(f"[-] [{section_name}] is not mapped")
 
 # 5. Save file
 with open("rebuilt.exe", "wb") as f_out:
